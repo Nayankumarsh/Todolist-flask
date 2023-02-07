@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.95);
+    color: white;
+    height: 13vh;
+   
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.co {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list {
+    display: inline-flex;
+    margin: 6vh;
+
+}
+
+.Container1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+.Container2 {
+
+
+    margin: 3vh 0;
+    background-color: #7fff9336;
+    height: auto;
+    width: 70vw;
+    border-radius: 3vh;
+}
+
+.Container2 h3 {
+    margin: 5vh 2vw;
+
+}
+
+input.title {
+    display: flex;
+
+    margin: 0vh 2vw;
+    padding: 1vh 1vw;
+    width: 64vw;
+}
+
+.Description {
+    margin: 0vh 2vw;
+    padding: 2vh 1vw;
+    width: 64vw;
+    height: 13vh;
+}
+#addlist{
+   background-color: #0028ffbf;
+margin: 3vh 2vw;
+padding: 1vh 0vw;
+width: 8vw;
+color: white;
+border-color: white;
+border-radius: 6px;
+border-width: 2px;
+}
+.list1{
+    flex-direction: column;
+    background: #bed1d1;
+    width: 66vw;
+    height: auto;
+    padding: 1vh 2vw;
+    margin: 3vh 0vw;
+    border-radius: 3vh;
+  }
+
+  table{
+    margin: 2vh 0vw;
+padding: 2vh 0vw;
+  }
+  th, td {
+    width: 22vw;
+text-align: center;
+border: 3px solid  #bed1d1;
+padding: 1vh 1vw;
+  }
+
+  #Delete{
+    background-color: #0028ffbf;
+    margin: 3vh 2vw;
+    padding: 1vh 0vw;
+    width: 4vw;
+    color: white;
+    border-color: white;
+    border-radius: 6px;
+    border-width: 1px;
+  }
