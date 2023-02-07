@@ -1,10 +1,12 @@
+import os
 from flask import Flask,render_template,request,redirect
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///Todo.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://todolist_mzhz_user:tCuAbXRvDgQVmjSdqIE1M7jxSbwPbstd@dpg-cfh43po2i3mp5runm95g-a.oregon-postgres.render.com/todolist_mzhz'
+#postgres://todolist_mzhz_user:tCuAbXRvDgQVmjSdqIE1M7jxSbwPbstd@dpg-cfh43po2i3mp5runm95g-a.oregon-postgres.render.com/todolist_mzhz
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
