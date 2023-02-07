@@ -1,0 +1,33 @@
+@media screen and (max-width:650px) {
+
+    .list {
+        
+        padding: 0 2vw;
+        margin: 0 1vw;
+    }
+
+    #addlist {
+        width: 20vw;
+        height: 4vh;
+    }
+
+    th,
+    td {
+        border: 0px solid #bed1d1;
+        padding: 1vh 1vw;
+        font-size: 11px;
+    }
+
+    #Delete {
+        margin: 0vh 1vw;
+        padding: 0vh 0vw;
+        width: 13vw;
+
+    }
+    nav{
+        justify-content: center;
+    }
+
+
+
+}
