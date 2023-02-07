@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='todo.css') }}">
+
+    <link rel="stylesheet" href="resp.css">
+    <title>TODO List</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="lis">
+               <a href = "/" ><li class="list">TODOs List </li></a>
+                <li class="list">Home</li>
+                <li class="list">About</li>
+                <li class="list">Item</li>
+            </ul>
+        </nav>
+    </header>
+    {% block body %}{% endblock body %}
+    <footer>
+
+    </footer>
+</body>
+<script src="{{ url_for('static', filename='todo.js') }}"></script>
+
+</html>
+

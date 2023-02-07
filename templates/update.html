@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+
+   
+    <main>
+
+        <div class="co">
+            <div class="Container1">
+                <h1>TODOs Update</h1>
+            </div>
+            <div class="Container2">
+            <form action ="/update/{{todo.SNo}}" method ="POST">
+                <h3>Title</h3>
+                <input class="title" id="title" name="Item_Title" type="text" value="{{todo.Item_Title}}" placeholder="Add an item to the list">
+                <h3>Description</h3>
+                <input type="text" class="Description" id = "Description"name = "Desc" value ="{{todo.Desc}}" placeholder="Explain in detail"></textarea>
+                <button id="addlist" type="Submit">Update</button>
+                
+                
+            </div>
+        </div>
+    </main>
+  
+    {% endblock body %}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block body %}
+
+   
+    <main>
+
+        <div class="co">
+            <div class="Container1">
+                <h1>TODOs List</h1>
+            </div>
+            <div class="Container2">
+            <form action ="/" method ="POST">
+                <h3>Title</h3>
+                <input class="title" id="title" name="Item_Title" type="text" placeholder="Add an item to the list">
+                <h3>Description</h3>
+                <textarea class="Description" id = "Description"name = "Desc" placeholder="Explain in detail"></textarea>
+                <button id="addlist" type="Submit">Add to list</button>
+                
+                <button id="addlist" type="button" >Clear All</button>
+                <div class="list1">
+                    <h2>Your Items</h2>
+
+                    {% if alltodo|length == 0 %}
+                       No Records
+
+                    {% else %}
+                           <table>
+                            <thead>
+                              <tr>
+                                <th>SNo</th>
+                                <th>Item Title</th>
+                                <th>Item Description</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                           <tbody id="tableBody">
+                        
+                    {% for todo in alltodo%}
+                            <tr>
+                                
+                                <th>{{loop.index}}</th>
+                                <td>{{todo.Item_Title}}</td>
+                                <td>{{todo.Desc}}</td>
+                                <td>
+                                    <a href = "/update/{{todo.SNo}}" id="Delete" type="button" >Update</button>
+                                    <a href="/delete/{{todo.SNo}}" id="Delete" type="button" >Delete</button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif%}
+
+                </div>
+            </div>
+        </div>
+    </main>
+  
+    {% endblock body %}
